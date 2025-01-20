@@ -1,0 +1,21 @@
+@import "scss/fonts";
+@import "scss/variables";
+@import "scss/globals";
+@import "github-markdown-css";
+
+@import "scss/tournaments-block";
+@import "scss/games-block";
+
+.markdown-body {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+
+.game-slide {
+  padding: 8px;
+  height: 240px;
+  background-color: #0d1117;
+  color: white;
+}

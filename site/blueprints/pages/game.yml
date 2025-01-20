@@ -1,0 +1,10 @@
+title: Game
+icon: lab
+
+sections:
+  files: true
+  fields:
+    type: fields
+    fields:
+      steamAppId:
+        type: text

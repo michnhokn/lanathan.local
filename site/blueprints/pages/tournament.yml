@@ -1,0 +1,5 @@
+title: Tournament
+icon: star
+
+fields:
+  dateTime: fields/dateTime

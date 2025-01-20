@@ -1,0 +1,11 @@
+type: date
+time:
+  step:
+    unit: second
+    size: 1
+  display: HH:mm:ss
+display: DD.MM.YYYY
+translate: false
+step:
+  unit: day
+  size: 1

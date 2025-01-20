@@ -1,0 +1,26 @@
+{
+  "name": "michnhokn/lanathan",
+  "description": "Local website for LANathan",
+  "version": "2.0.0",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">= 8.3.0",
+    "getkirby/cms": "^4.0",
+    "arnoson/kirby-vite": "^5.0",
+    "getkirby/cli": "^1.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "kirby setup"
+    ]
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^7.2"
+  }
+}

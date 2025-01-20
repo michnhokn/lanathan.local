@@ -1,0 +1,11 @@
+:80 {
+	root * /var/www/localhost/public
+	php_fastcgi unix//var/run/php/php8.3-fpm.sock
+	encode zstd gzip
+	file_server
+	log {
+		output stderr
+		format console
+		level ERROR
+	}
+}

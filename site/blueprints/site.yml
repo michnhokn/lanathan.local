@@ -1,0 +1,23 @@
+title: Site
+
+columns:
+  - width: 1/2
+    sections:
+      pages:
+        label: Seiten
+        type: pages
+        templates:
+          - default
+          - error
+
+  - width: 1/2
+    sections:
+      tournaments:
+        label: Turniere
+        type: pages
+        templates: tournament
+
+      games:
+        label: Spiele
+        type: pages
+        templates: game
