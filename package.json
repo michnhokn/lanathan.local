@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "bracketry": "^1.1.3",
+    "brackets-viewer": "^1.6.2",
     "github-markdown-css": "^5.8.1"
   }
 }

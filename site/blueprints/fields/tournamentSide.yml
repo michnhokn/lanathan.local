@@ -1,0 +1,16 @@
+type: object
+fields:
+    contestant:
+        type: select
+        required: true
+        options:
+            type: query
+            query: page.contestants.toStructure
+            text: "{{ item.name }}"
+            value: "{{ item.name.slug }}"
+    currentScore:
+        type: number
+        required: true
+        step: 1
+    isWinner:
+        type: toggle

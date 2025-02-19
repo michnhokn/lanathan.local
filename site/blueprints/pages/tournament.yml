@@ -1,5 +1,57 @@
 title: Tournament
 icon: star
 
-fields:
-  dateTime: fields/dateTime
+columns:
+    -   width: 1/3
+        fields:
+            dateTime: fields/dateTime
+
+            rounds:
+                type: structure
+                fields:
+                    name:
+                        type: text
+                        required: true
+
+            contestants:
+                type: structure
+                fields:
+                    name:
+                        type: text
+                        required: true
+                    shorthand:
+                        type: text
+                        minlength: 2
+                        maxlength: 2
+
+    -   width: 2/3
+        fields:
+            matches:
+                type: structure
+                fields:
+                    round:
+                        type: select
+                        width: 1/2
+                        required: true
+                        options:
+                            type: query
+                            query: page.rounds.toStructure
+                            text: "{{ item.name }}"
+                            value: "{{ item.id }}"
+                    order:
+                        type: number
+                        width: 1/2
+                        required: true
+                        default: 0
+                        step: 1
+                    matchStatus:
+                        type: text
+                        width: 1/2
+                    isLive:
+                        type: toggle
+                        width: 1/2
+                    sideOne: fields/tournamentSide
+                    sideTwo: fields/tournamentSide
+                    isBronzeMatch:
+                        label: Third place match
+                        type: toggle
